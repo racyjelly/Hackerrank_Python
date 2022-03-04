@@ -1,0 +1,21 @@
+#The included code stub will read an integer, , from STDIN.
+#Without using any string methods, try to print the following:
+#123...n
+#Note that "..." represents the consecutive values in between.
+
+from __future__ import print_function
+if __name__ == '__main__':
+    n = int(raw_input())
+    for i in range(n):
+        i=i+1
+        print(i)
+ #오답
+ ------------------------------
+ 
+from __future__ import print_function
+if __name__ == '__main__':
+    n = int(raw_input())
+    for i in range(n):
+        i=i+1
+        print(i, end='') #end를 넣어 i와 출력되는 i사이의 연산자를 지정
+#정답
